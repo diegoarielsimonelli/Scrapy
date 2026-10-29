@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SCRAPY</title>
+  </head>
+  <body>
+    <section class="container my-5">
+      <h1 class="layout text-center display-4">SCRAPY</h1>
+      <p class="layout text-center">
+        Listado con comandos básicos para utilizar SCRAPY:
+      </p>
+
+      <!-- Pasos Iniciales -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <p class="mb-2">
+            1. Documentación oficial y guías de instalación haciendo click
+            <a href="https://scrapy.org" target="_blank">aquí</a>.
+          </p>
+          <p class="mb-0">
+            2. Abrir <strong> una terminal</strong> con tu entorno virtual activo.
+          </p>
+        </div>
+      </div>
+
+      <!-- Configuración Inicial -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-primary text-white fw-bold">
+          Configuración Inicial (Globales)
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>scrapy startproject nombre_proyecto</strong> para crear la estructura base de directorios y archivos de configuración para un nuevo proyecto.
+          </li>
+          <li class="list-group-item">
+            <strong>scrapy genspider nombre_araña dominio.com</strong> para generar una nueva araña utilizando plantillas predefinidas dentro del proyecto actual.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Desarrollo y Pruebas -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-success text-white fw-bold">
+          Desarrollo y Pruebas (Interactivos)
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>scrapy shell "URL"</strong> para abrir una consola interactiva y probar selectores CSS o XPath en tiempo real sobre la página indicada.
+          </li>
+          <li class="list-group-item">
+            <strong>scrapy fetch "URL"</strong> para descargar el código HTML de una página web utilizando el descargador de Scrapy y visualizarlo en la terminal.
+          </li>
+          <li class="list-group-item">
+            <strong>scrapy view "URL"</strong> para descargar y abrir la página web en tu navegador tal y como la ve Scrapy (ideal para verificar contenidos cargados por JavaScript).
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ejecución y Extracción -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-secondary text-white fw-bold">
+          Ejecución y Extracción
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>scrapy crawl nombre_araña</strong> para ejecutar una araña específica definida en nuestro proyecto e iniciar la recolección de datos.
+          </li>
+          <li class="list-group-item">
+            <strong>scrapy crawl nombre_araña -O archivo.json</strong> ejecuta la extracción y exporta directamente los resultados a un archivo estructurado (admite .json, .csv, .xml). La opción -O mayúscula sobreescribe el archivo.
+          </li>
+          <li class="list-group-item">
+            <strong>scrapy list</strong> para mostrar una lista con los nombres de todas las arañas disponibles en el proyecto actual.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer class="layout text-center">
+    <p>
+      Desarrollado por
+      <a
+        href="https://www.linkedin.com/in/diego-ariel-simonelli-87b8b986/"
+        target="_blank"
+        >Diego Simonelli
+      </a>
+      ©
+    </p>
+  </footer>
+</html>
